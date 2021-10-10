@@ -3,7 +3,7 @@ import express from "express";
 //import passport from "passport";
 
 //Database Model
-import { FoodModel } from "../../database/allModel";
+import { FoodModel } from "../../database/allModels";
 
 //Validation
 import { ValidateRestaurantId, ValidateCategory } from "../../validation/food";

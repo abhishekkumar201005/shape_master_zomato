@@ -1,8 +1,5 @@
 import JwtPassport from "passport-jwt";
-import dotenv from "dotenv";
-dotenv.config({
-  path: require("path").resolve(__dirname, "../.env"),
-});
+
 // Database Model
 import { UserModel } from "../database/user";
 

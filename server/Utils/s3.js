@@ -1,5 +1,3 @@
-// for env variable
-require("dotenv").config();
 import AWS from "aws-sdk";
 
 // AWS s3 bucket config

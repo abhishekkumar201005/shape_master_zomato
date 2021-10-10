@@ -1,6 +1,7 @@
 // for env variable
 require("dotenv").config();
 
+//Libraries
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
@@ -17,7 +18,7 @@ import Menu from "./API/Menu";
 import Restaurant from "./API/Restaurant";
 import Image from "./API/Image";
 import Order from "./API/Order";
-import Review from "./API/Reviews";
+import Reviews from "./API/Reviews";
 import User from "./API/User";
 //Database connection
 import ConnectDB from "./database/connection";
@@ -43,7 +44,7 @@ zomato.use("/menu", Menu);
 zomato.use("image", Image);
 zomato.use("/user", User);
 zomato.use("/order", Order);
-zomato.use("/reviews", Review);
+zomato.use("/reviews", Reviews);
 zomato.get("/", (req, res) => res.json({ message: "SetUp Successful🚀🚀🚀" }));
 
 zomato.listen(4000, () =>
