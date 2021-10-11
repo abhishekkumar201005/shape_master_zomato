@@ -36,7 +36,7 @@ zomato.use(passport.session());
 googleAuthConfig(passport);
 routeConfig(passport);
 
-//For application routes(4000-port)
+//For application routes(4000-port)-
 zomato.use("/auth", Auth);
 zomato.use("/restaurant", Restaurant);
 zomato.use("/food", Food);
