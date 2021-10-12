@@ -41,7 +41,7 @@ zomato.use("/auth", Auth);
 zomato.use("/restaurant", Restaurant);
 zomato.use("/food", Food);
 zomato.use("/menu", Menu);
-zomato.use("image", Image);
+zomato.use("/image", Image);
 zomato.use("/user", User);
 zomato.use("/order", Order);
 zomato.use("/reviews", Reviews);
